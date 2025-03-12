@@ -12,7 +12,6 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    
 }
 
 h1,
@@ -98,7 +97,7 @@ img {
 .hero-description {
     margin-top: 1rem;
     font-size: 1rem;
-    max-width: 32rem; 
+    max-width: 32rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -142,7 +141,7 @@ img {
 }
 
 
-.hero-image-left, 
+.hero-image-left,
 .hero-image-right {
     display: flex;
     align-items: center;
@@ -177,6 +176,7 @@ img {
     gap: 5rem;
 }
 
+
 .logo-container img {
     width: 100px;
     height: 40px;
@@ -193,39 +193,58 @@ img {
 
 @media (max-width: 992px) {
     .hero-container {
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
         width: 90%;
         padding: 2rem 0;
     }
+
     .hero-section {
         height: auto;
     }
-    
+
     .hero-content {
         order: 1;
         margin: 0 auto 2rem;
         padding: 0 1rem;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
         line-height: 3rem;
     }
-    
+
     .hero-description {
         max-width: 80%;
         font-size: 0.9rem;
     }
-    
+
     .hero-buttons {
         margin-top: 1.5rem;
     }
-    .hero-image-left img, 
+
+    .hero-image-left img,
     .hero-image-right img {
         display: none;
     }
+
     .hero-image-mobile {
-        display: block; 
+        display: block;
+    }
+
+    .trusted-section {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 30px 20px;
+    }
+
+    .logo-container {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .logo-container img {
+        width: 90px;
+        height: 36px;
     }
 }
 
@@ -234,45 +253,43 @@ img {
     body {
         text-align: center;
     }
+
     .hero-content {
         padding: 0.5rem;
         margin-top: 2rem;
     }
-    .hero-section {
-        height: 100vh;
-    }
-    
+
     .hero-title {
         font-size: 2.5rem;
         line-height: 2.5rem;
         margin-bottom: 1rem;
     }
-    
+
     .hero-description {
         max-width: 80%;
         font-size: 0.875rem;
         line-height: 1.5;
     }
-    
-    
+
+
     .hero-buttons {
         align-items: center;
         gap: 1rem;
         flex-direction: column;
         margin-top: 1.5rem;
     }
-    
+
     .btn-primary {
         width: 40%;
         padding: 1rem;
     }
-    
+
     .btn-video {
         margin-top: 0.5rem;
     }
-    
-  
-    .hero-image-left img, 
+
+
+    .hero-image-left img,
     .hero-image-right img {
         display: none;
     }
@@ -282,5 +299,9 @@ img {
         max-width: 90%;
         margin-inline: auto;
     }
-    
+
+    .logo-container {
+        gap: 2rem;
+    }
+
 }
