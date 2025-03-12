@@ -12,6 +12,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    
 }
 
 h1,
@@ -140,9 +141,137 @@ img {
     justify-content: center;
 }
 
-/* Image containers */
+
 .hero-image-left, 
 .hero-image-right {
     display: flex;
     align-items: center;
+}
+
+.hero-image-mobile {
+    display: none;
+}
+
+
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction:column-reverse;
+        width: 90%;
+        padding: 2rem 0;
+    }
+    .hero-section {
+        height: auto;
+    }
+    
+    .hero-content {
+        order: 1;
+        margin: 0 auto 2rem;
+        padding: 0 1rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    
+    .hero-description {
+        max-width: 80%;
+        font-size: 0.9rem;
+    }
+    
+    .hero-buttons {
+        margin-top: 1.5rem;
+    }
+    .hero-image-left img, 
+    .hero-image-right img {
+        display: none;
+    }
+    .hero-image-mobile {
+        display: block; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+    .hero-content {
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+    .hero-section {
+        height: 100vh;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-description {
+        max-width: 80%;
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+    
+    
+    .hero-buttons {
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+    
+    .btn-primary {
+        width: 40%;
+        padding: 1rem;
+    }
+    
+    .btn-video {
+        margin-top: 0.5rem;
+    }
+    
+  
+    .hero-image-left img, 
+    .hero-image-right img {
+        display: none;
+    }
+
+    .hero-image-mobile {
+        display: block;
+        max-width: 90%;
+        margin-inline: auto;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+    
+    .hero-description {
+        font-size: 0.875rem;
+    }
+    
+    .hero-image-mobile {
+        padding-bottom: 1rem;
+    }
+    
+    .social-icons {
+        gap: 0.75rem;
+    }
+    
+    .social-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .user-avatar {
+        width: 3rem;
+        height: 4rem;
+    }
 }
