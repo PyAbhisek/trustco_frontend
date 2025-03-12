@@ -114,6 +114,7 @@ img {
     background-color: #0A3E5C;
     color: white;
     padding: 0.75rem 1.5rem;
+    
     border-radius: 9999px;
     font-weight: 500;
     text-decoration: none;
@@ -173,7 +174,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 
@@ -214,6 +215,7 @@ header {
     margin-right: 8px;
 }
 
+/* Desktop Menu */
 nav.desktop-menu {
     display: flex;
 }
@@ -286,8 +288,123 @@ nav.desktop-menu {
     background-color: #021d2a;
 }
 
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
 
-@media (max-width: 992px) {
+.hamburger-menu svg {
+    width: 28px;
+    height: 28px;
+    color: #12141D;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px; 
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-button svg {
+    width: 28px;
+    height: 28px;
+    color: #12141D;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.mobile-menu ul li {
+    margin-bottom: 20px;
+}
+
+.mobile-menu a {
+    color: #12141D;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.mobile-menu a:hover {
+    color: #043A53;
+}
+
+.mobile-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.mobile-buttons .btn {
+    width: 100%;
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@media only screen and (max-width: 1023px) {
+    nav.desktop-menu {
+        display: none;
+    }
+
+    .desktop-buttons {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 1000px) {
     .hero-container {
         flex-direction: column-reverse;
         width: 90%;
