@@ -77,6 +77,7 @@ img {
 }
 
 
+
 .hero-content {
     text-align: center;
     margin: 0 auto;
@@ -387,6 +388,64 @@ nav.desktop-menu {
 .overlay.active {
     opacity: 1;
     visibility: visible;
+}
+
+/* video section */.span-text {
+    color: #F0B73F;
+}
+
+.video-section {
+    background-color: #043A53;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensure vertical centering */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.video-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Add space between h1 and p */
+}
+
+.video-info h1 {
+    width: 60%;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.video-info p {
+    width: 40%;
+    font-size: 1.25rem;
+    line-height: 30px;
+}
+
+.container {
+    width: 75%;
+    margin-top: 6.25rem;
+    color: white;
+}
+
+.thumbnail-container {
+    margin-top: 2rem; /* Reduced margin to tighten spacing */
+    position: relative;
+    width: 75%; /* Match container width */
+}
+
+.thumbnailImage {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7.5rem;
+    height: 7.5rem;
+    cursor: pointer;
 }
 
 
