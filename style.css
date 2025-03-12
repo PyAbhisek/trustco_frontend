@@ -405,7 +405,7 @@ nav.desktop-menu {
 .video-info {
     display: flex;
     align-items: center;
-    gap: 1.5rem; /* Add space between h1 and p */
+    gap: 1.5rem;
 }
 
 .video-info h1 {
@@ -427,9 +427,9 @@ nav.desktop-menu {
 }
 
 .thumbnail-container {
-    margin-top: 2rem; /* Reduced margin to tighten spacing */
+    margin-top: 2rem; 
     position: relative;
-    width: 75%; /* Match container width */
+    width: 75%;
 }
 
 .thumbnailImage {
@@ -518,6 +518,23 @@ nav.desktop-menu {
         width: 90px;
         height: 36px;
     }
+    .video-info{
+        flex-direction: column;
+    }
+    .video-info h1 {
+        width: 100%;
+    }
+    br{
+        display: none;
+    }
+    .video-info p {
+        width: 100%;
+    }
+    .playButton{
+        width: 5rem;
+        height: 5rem;
+    }
+    
 }
 
 
@@ -574,6 +591,35 @@ nav.desktop-menu {
 
     .logo-container {
         gap: 2rem;
+    }
+    .container{
+        margin-top: 3.1rem;
+    }
+    .video-info{
+        gap: 1rem;
+
+    }
+    .container{
+        width: 90%;
+    }
+    .video-info h1 {
+        width: 100%;
+        font-size: 1.8rem;
+        line-height: normal;
+        text-align: left;
+    }
+    .video-info p {
+        width: 100%;
+        font-size: 0.8rem;
+        text-align: left;
+    }
+    .playButton{
+        width: 3rem;
+        height: 3rem;
+    }
+    .thumbnail-container{
+        margin-top: 1rem;
+        width: 90%;
     }
 
 }
