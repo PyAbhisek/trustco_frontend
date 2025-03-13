@@ -655,7 +655,7 @@ nav.desktop-menu {
     transition: background-color 0.3s;
 }
 
-.founders-section{
+.founders-desktop-section{
     display: flex;
     padding: 3.5rem 3rem;
 }
@@ -668,6 +668,7 @@ nav.desktop-menu {
 }
 .founder-picture{
     width: 45%;
+    display: flex;
 }
 
 .founder-info h2{
@@ -694,6 +695,10 @@ nav.desktop-menu {
 .desgination p{
     margin-top: 0.5rem;
     font-size: 1rem;
+}
+
+.founders-mobile-section{
+    display: none;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -822,8 +827,34 @@ nav.desktop-menu {
         font-size: 1rem;
         line-height: 22px;
     }
-    
-    
+    .founders-desktop-section{
+        display: none;
+    }
+    .founders-mobile-section{
+        display: block;
+    }
+    .founder-description{
+        width: 90%;
+        margin-inline:auto ;
+    }
+    .founder-picture{
+        display: block;
+        width: 100%;
+    }
+    .founder-info h2{
+        font-size: 2.8rem;
+        line-height: 52px;
+    }
+    .founder-info p{
+        font-size: 1rem;
+        line-height: 22px;
+    }
+    .description-holder{
+        width: 85%;
+    }
+    .success-btn{
+        margin-inline:auto ;
+    }
 }
 
 
@@ -976,4 +1007,13 @@ nav.desktop-menu {
         gap: 2rem;
         width: 90%;
     }
+    .founder-info h2{
+        font-size: 2rem;
+        line-height: 44px;
+    }
+    .founder-info p{
+        font-size: 1rem;
+        line-height: 24px;
+    }
+  
 }
