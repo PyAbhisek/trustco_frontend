@@ -602,6 +602,34 @@ nav.desktop-menu {
 .bridge-section-mobile{
     display: none;
 }
+
+
+/* number section  */
+.number-desktop-section{
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(auto-fit, minmax( 235px    , 1fr));
+    margin-inline: auto;
+    height: 20rem;
+    gap: 20px;
+}
+.numberItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.numberItems h2{
+    font-size: 3.8rem;
+    line-height: 72px;
+    color: #043A53;
+    font-weight: bold;
+}
+.numberItems p{
+    color: #1E1E1E;
+    font-size: 1.5rem;
+    line-height: 32px;
+    font-weight: bold;
+}
 @media only screen and (max-width: 1023px) {
     nav.desktop-menu {
         display: none;
@@ -823,7 +851,6 @@ nav.desktop-menu {
     }
     .bridge-section{
         display: none;
-
     }
     .bridge-section-mobile{
         display: flex;
