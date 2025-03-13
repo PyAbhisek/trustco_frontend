@@ -630,6 +630,11 @@ nav.desktop-menu {
     line-height: 32px;
     font-weight: bold;
 }
+
+.number-mobile-section{
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax( 235px    , 1fr));
+}
 @media only screen and (max-width: 1023px) {
     nav.desktop-menu {
         display: none;
@@ -740,6 +745,24 @@ nav.desktop-menu {
         margin-top: 0;
         margin-bottom: 0;
     }
+    .number-desktop-section{
+        display: none;
+    }
+    .number-mobile-section{
+        margin-top: 1.5rem;
+        padding: 50px 0;
+        display: grid;
+    }
+    .numberItems h2{
+        font-size: 2.8rem;
+        line-height: 52px;
+    }
+    .numberItems p{
+        font-size: 1rem;
+        line-height: 22px;
+    }
+    
+    
 }
 
 
@@ -874,4 +897,22 @@ nav.desktop-menu {
         margin-inline: auto;
     }
 
+    .numberItems h2{
+        font-size: 2rem;
+        line-height: 44px;
+    }
+    .numberItems p{
+        font-size: 1rem;
+        line-height: 24px;
+    }
+    .number-mobile-section{
+        margin-top: 1.5rem;
+        margin-inline: auto;
+        padding: 50px 0;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax( 150px    , 1fr));
+        gap: 2rem;
+        width: 90%;
+    }
 }
