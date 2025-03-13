@@ -607,7 +607,9 @@ nav.desktop-menu {
 /* number section  */
 .number-desktop-section{
     display: grid;
-    width: 70%;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax( 235px    , 1fr));
     margin-inline: auto;
     height: 20rem;
@@ -635,6 +637,65 @@ nav.desktop-menu {
     display: none;
     grid-template-columns: repeat(auto-fit, minmax( 235px    , 1fr));
 }
+
+/* founders-section */
+.success-btn {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #043A53;
+    color: white;
+    border: none;
+    padding: 1rem 1rem 1rem 1.5rem;
+    border-radius: 55px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.founders-section{
+    display: flex;
+    padding: 3.5rem 3rem;
+}
+.founder-description{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.founder-picture{
+    width: 45%;
+}
+
+.founder-info h2{
+    font-size: 3.8rem;
+    line-height: 72px; 
+    margin-bottom: 1rem; 
+}
+.founder-info p{
+    font-size: 1.5rem;
+    line-height: 32px;  
+}
+.description-holder{
+    width: 70%;
+}
+.desgination{
+    margin-top: 1.5rem;
+}
+.desgination h5{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    line-height: 0;
+}
+.desgination p{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
 @media only screen and (max-width: 1023px) {
     nav.desktop-menu {
         display: none;
