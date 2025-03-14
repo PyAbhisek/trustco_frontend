@@ -962,6 +962,73 @@ nav.desktop-menu {
     margin-top: 30px;
 }
 
+/* cta section  */
+.cta-container {
+    display: flex;
+    position: relative;
+    background-color: #12141D;
+    color: #ffffff;
+}
+
+/* CTA Content */
+.cta-content {
+    width: 60%;
+    padding: 104px 0 104px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cta-title {
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 72px;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f8b133;
+    color: #000000;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button svg {
+    margin-left: 8px;
+}
+
+.cta-button:hover {
+    background-color: #e69f1d;
+}
+
+.cta-note {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* CTA Image */
+.cta-image {
+    flex: 1;
+    right: 6.5rem;
+    bottom:0;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cta-image img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
 @media only screen and (max-width: 1023px) {
     nav.desktop-menu {
         display: none;
