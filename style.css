@@ -1133,6 +1133,32 @@ footer {
     font-size: 14px;
 }
 
+ /* site styling */
+ .site-credit {
+    background-color: #f5f7f8;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    color: #92A7B0;
+}
+
+.credit-center {
+    text-align: center;
+}
+
+.site-credit a {
+    color: #92A7B0;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.site-credit a:hover {
+    text-decoration: underline;
+}
+
+
 @media only screen and (max-width: 1023px) {
     nav.desktop-menu {
         display: none;
