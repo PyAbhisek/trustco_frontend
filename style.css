@@ -1295,6 +1295,89 @@ footer {
 }
 
 
+.input-group {
+    position: relative;
+    flex: 1;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #0056b3;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+    padding-left: 12px;
+}
+
+.icon {
+    position: absolute;
+    left: 12px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.terms-link {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.terms-link:hover {
+    text-decoration: underline;
+}
+
+.submit-button {
+    background-color: #003057;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    float: right;
+}
+
+.submit-button:hover {
+    background-color: #00253e;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+.form-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media only screen and (max-width: 1023px) {
     nav.desktop-menu {
         display: none;
@@ -1598,91 +1681,37 @@ footer {
     .form-row {
         flex-direction: column;
     }
+    .form{
+        margin-top: 30px;
+    }
+    .checkbox-group{
+        flex-direction: column;
+    }
+    .clearfix{
+        width: 100%;
+    }
+    .clearfix button{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .hero-container h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .hero-container.contact{
+        background-color: white;
+        margin-inline:auto   ;
+    }
+    .hero-section.contactParent{
+        background-color: white;
+        justify-content: unset;
+        width: 100%;
+    }
+    .contact-card{
+        box-shadow: unset;
+    }
 }
 
-.input-group {
-    position: relative;
-    flex: 1;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 12px 12px 12px 40px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    outline: none;
-    transition: border-color 0.3s;
-}
-
-input:focus, textarea:focus {
-    border-color: #0056b3;
-}
-
-textarea {
-    min-height: 120px;
-    resize: vertical;
-    padding-left: 12px;
-}
-
-.icon {
-    position: absolute;
-    left: 12px;
-    height: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #888;
-}
-
-.checkbox-group {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 25px 0;
-}
-
-.checkbox-group input {
-    width: auto;
-    margin-right: 10px;
-}
-
-.terms-link {
-    color: #0056b3;
-    text-decoration: none;
-}
-
-.terms-link:hover {
-    text-decoration: underline;
-}
-
-.submit-button {
-    background-color: #003057;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    font-size: 16px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    float: right;
-}
-
-.submit-button:hover {
-    background-color: #00253e;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-
-}
-
-.form-parent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 @media (max-width: 768px) {
     body {
         text-align: center;
@@ -1890,5 +1919,8 @@ textarea {
     .site-credit{
         flex-direction: column;
         gap:20px;
+    }
+    .form-container h1{
+        font-size:28px;
     }
 }
