@@ -1159,6 +1159,111 @@ footer {
 }
 
 
+/* contact page */
+.hero-container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+/* Contact Options Styles */
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.hero-container h1{
+    color: #12141D;
+    font-size: 5rem;
+    font-weight: 700;
+}
+.hero-container p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contact-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    padding: 24px;
+    width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.contact-desc{
+    margin-top: 2rem;
+   
+}
+.contact-desc p{
+    text-align: left;
+    font-size: 18px;
+}
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email {
+    background-color: #F2F5F6;
+}
+
+.location {
+    background-color: #FCF3E0;
+}
+
+.phone {
+    background-color: #F2F5F6;
+}
+
+.icon-wrapper i {
+    font-size: 24px;
+}
+
+.contact-card h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.contact-link {
+    color: #043A53;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+
+
+.hero-container.contact{
+    flex-direction: column;
+}
 @media only screen and (max-width: 1023px) {
     nav.desktop-menu {
         display: none;
