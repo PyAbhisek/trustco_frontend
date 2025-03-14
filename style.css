@@ -1666,4 +1666,8 @@ footer {
     .cta-container{
         height: 33rem;
     }
+    .site-credit{
+        flex-direction: column;
+        gap:20px;
+    }
 }
