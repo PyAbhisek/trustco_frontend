@@ -1700,10 +1700,12 @@ textarea {
     }
     .hero-container.contact{
         background-color: white;
+        margin-inline:auto   ;
     }
-    .hero-section .contactParent{
+    .hero-section.contactParent{
         background-color: white;
         justify-content: unset;
+        width: 100%;
     }
     .contact-card{
         box-shadow: unset;
