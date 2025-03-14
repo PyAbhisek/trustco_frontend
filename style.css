@@ -1436,6 +1436,7 @@ textarea {
         flex-direction: column;
         gap: 2rem;
         padding: 30px 20px;
+        height: auto;
     }
 
     .logo-container {
