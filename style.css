@@ -1286,6 +1286,7 @@ nav.desktop-menu {
     }
 
     .mobile-see-all .see-all {
+        margin-bottom: 50px;
         display: inline-flex;
         justify-content: center;
     }
@@ -1294,6 +1295,24 @@ nav.desktop-menu {
     }
     .card-info{
         text-align: left;
+    }
+    .cta-image{
+        right: 0;
+    }
+    .cta-container{
+        height: 38rem;
+    }
+    .cta-content{
+        padding: 50px 28px;
+        width: auto;
+        justify-content: unset;
+        align-items: center;
+        margin-inline:auto ;
+    }
+    .cta-title{
+        line-height: 38px;
+        font-size: 1.8rem;
+        font-weight: bold;
     }
 
 }
@@ -1497,4 +1516,10 @@ nav.desktop-menu {
     }
 
 
+}
+
+@media (max-width: 480px) {
+    .cta-container{
+        height: 33rem;
+    }
 }
