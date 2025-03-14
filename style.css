@@ -1418,6 +1418,20 @@ footer {
         font-size: 1.8rem;
         font-weight: bold;
     }
+    .footer-container{
+        flex-direction: column;
+        gap:1.5rem
+    }
+    .social-links{
+        margin-top: unset;
+    }
+    .footer-brand{
+        margin-bottom: unset;
+    }
+    .footer-links-column{
+        min-width: unset;
+        text-align: left;
+    }
 
 }
 
